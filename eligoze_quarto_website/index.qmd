@@ -1,7 +1,18 @@
 ---
-title: "eligoze_quarto_website"
+title: "Eli's Website"
+subtitle: "MDS Student"
+image: img/eli_racoon.jpg
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: false
 ---
 
-This is a Quarto website.
+<div class="intro">
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Hello! I'm Elí, MDS student. Welcome to my website.
+
+<img src="img/eli_racoon.jpg" alt="Cover Image" class="cover-img"/>
+
+</div>
