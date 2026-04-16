@@ -1,20 +1,29 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - about.qmd
+  resources:
+    - img
 
 website:
-  title: "eligoze_quarto_website"
+  title: "Elí Gonzalez"
+  search: false
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    background: light
+    right:
+      - href: index.qmd#projects
+        text: Projects
+      - href: about.qmd
+        text: About
+      - href: https://medium.com/@eligoze75
+        text: Blog
+        target: _blank
 
 format:
   html:
-    theme: flatly
+    theme: cosmo
     css: styles.css
-    toc: true
-
-
-
+    toc: false
+    anchor-sections: false
