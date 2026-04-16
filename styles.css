@@ -24,7 +24,7 @@
   --space-6: 2.5rem;
   --space-7: 3.5rem;
   --space-8: 4.5rem;
-  --content-max: 84rem;
+  --content-max: 100rem;
   --transition: 180ms ease;
 }
 
@@ -242,7 +242,7 @@ main.content {
   font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--text-muted);
-  max-width: 26rem;
+  max-width: 36rem !important;
   margin: 0 0 var(--space-5);
 }
 
