@@ -4,8 +4,9 @@ project:
   render:
     - index.qmd
     - about.qmd
-  resources:
-    - img
+resources:
+  - img
+  - styles.css
 
 website:
   title: "Elí Gonzalez"
@@ -24,6 +25,9 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css
     toc: false
     anchor-sections: false
+    # Load custom CSS with a version query so browsers and GitHub Pages pick up changes after deploy
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="styles.css?v=2" />

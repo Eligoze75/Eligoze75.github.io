@@ -238,11 +238,12 @@ main.content {
   line-height: 1.4;
 }
 
+/* Width: exclude .hero__lede from main.content p { max-width: none } via :not() below */
 .hero__lede {
   font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--text-muted);
-  max-width: 36rem !important;
+  max-width: 36rem;
   margin: 0 0 var(--space-5);
 }
 
@@ -585,7 +586,7 @@ main.content h2 {
   border-bottom: none;
 }
 
-main.content p,
+main.content p:not(.hero__lede),
 main.content li {
   color: var(--text-muted);
   max-width: none;
