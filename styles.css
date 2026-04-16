@@ -24,7 +24,7 @@
   --space-6: 2.5rem;
   --space-7: 3.5rem;
   --space-8: 4.5rem;
-  --content-max: 72rem;
+  --content-max: 84rem;
   --transition: 180ms ease;
 }
 
@@ -143,7 +143,7 @@ main.content {
 }
 
 .section-heading {
-  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: 600;
   letter-spacing: -0.03em;
   color: var(--text);
@@ -152,9 +152,9 @@ main.content {
 }
 
 .section-lede {
-  font-size: 0.98rem;
+  font-size: 1.0625rem;
   color: var(--text-muted);
-  max-width: 42rem;
+  max-width: 56rem;
   margin: 0 0 var(--space-5);
   line-height: 1.55;
 }
@@ -242,7 +242,7 @@ main.content {
   font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--text-muted);
-  max-width: 42rem;
+  max-width: 26rem;
   margin: 0 0 var(--space-5);
 }
 
@@ -302,13 +302,22 @@ main.content {
 /* ——— Experience strip ——— */
 .exp-strip {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: var(--space-4);
 }
 
-@media (max-width: 860px) {
+.exp-strip .exp-card:nth-child(1) { grid-column: 1 / span 2; }
+.exp-strip .exp-card:nth-child(2) { grid-column: 3 / span 2; }
+.exp-strip .exp-card:nth-child(3) { grid-column: 5 / span 2; }
+.exp-strip .exp-card:nth-child(4) { grid-column: 2 / span 2; }
+.exp-strip .exp-card:nth-child(5) { grid-column: 4 / span 2; }
+
+@media (max-width: 720px) {
   .exp-strip {
     grid-template-columns: 1fr;
+  }
+  .exp-strip .exp-card:nth-child(n) {
+    grid-column: 1 / -1;
   }
 }
 
@@ -338,6 +347,17 @@ main.content {
   object-position: left center;
 }
 
+.exp-card__logo--dark-bg {
+  background: #1a1a1a;
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.6rem;
+  height: 36px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .exp-card__body {
   display: flex;
   flex-direction: column;
@@ -362,28 +382,15 @@ main.content {
 .exp-card__domain {
   font-size: 0.78rem;
   color: var(--text-faint);
-  margin: 0 0 0.4rem;
-  line-height: 1.4;
-}
-
-.exp-card__blurb {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  line-height: 1.55;
   margin: 0;
+  line-height: 1.4;
 }
 
 /* ——— Project grid & cards ——— */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-4);
-}
-
-@media (max-width: 640px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .project-card {
@@ -412,6 +419,26 @@ main.content {
 .project-card:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+.project-card--featured {
+  grid-column: 1 / -1;
+}
+
+.project-card__logo-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+
+.project-card__logo-row img {
+  height: 48px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
 }
 
 .project-card__row {
@@ -515,6 +542,20 @@ main.content {
   line-height: 1.65;
 }
 
+.now-card__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.now-card__logo {
+  height: 52px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 /* ——— Default Quarto title block (About, etc.) ——— */
 .quarto-title-block {
   margin-bottom: var(--space-5);
@@ -547,7 +588,7 @@ main.content h2 {
 main.content p,
 main.content li {
   color: var(--text-muted);
-  max-width: 42rem;
+  max-width: none;
 }
 
 main.content a:not(.btn):not(.project-card):not(.navbar-brand):not(.nav-link) {
@@ -666,6 +707,12 @@ main.content a:not(.btn):not(.project-card):not(.navbar-brand):not(.nav-link):ho
   margin-top: 4px;
 }
 
+.timeline-entry__logo--dark-bg {
+  background: #1a1a1a;
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 0.5rem;
+}
+
 .timeline-entry__company {
   font-size: 1rem;
   font-weight: 700;
@@ -716,6 +763,17 @@ main.content a:not(.btn):not(.project-card):not(.navbar-brand):not(.nav-link):ho
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.edu-item__logo {
+  height: 48px;
+  width: auto;
+  max-width: 68px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .edu-item__degree {

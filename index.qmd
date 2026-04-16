@@ -14,7 +14,7 @@ format:
       <p class="hero__title" role="heading" aria-level="1">I'm Elí</p>
       <p class="hero__role">Data scientist &amp; builder</p>
       <p class="hero__lede">
-        I'm a Vancouver-based data scientist with 6+ years shipping production ML in fraud, growth, and analytics. I like fast feedback loops, clear metrics, and tools that teams actually use. I'm also pursuing my Master of Data Science at UBC.
+        6 years building production ML at fintech companies, unicorn startups, and global brands. I co-founded a ghost kitchen powered by data analytics, shipped open source tools to PyPI, and write about machine learning on Medium. Currently a Master of Data Science candidate at UBC, going deep on AI systems and real-world product problems.
       </p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="https://medium.com/@eligoze75" target="_blank" rel="noopener noreferrer">Data science blog</a>
@@ -26,7 +26,7 @@ format:
 
 <section id="experience" class="section-block" data-animate aria-labelledby="experience-heading">
   <h2 id="experience-heading" class="section-heading">Where I've worked</h2>
-  <p class="section-lede">Startups, unicorns, and a global brand — always on the data and ML side.</p>
+  <p class="section-lede">Startups, unicorns, and a global brand. Always on the data and ML side.</p>
   <div class="exp-strip">
 
     <div class="exp-card">
@@ -34,8 +34,7 @@ format:
       <div class="exp-card__body">
         <p class="exp-card__company">Kueski</p>
         <p class="exp-card__role">Senior Data Scientist</p>
-        <p class="exp-card__domain">Fintech · Fraud &amp; Risk · Mexico</p>
-        <p class="exp-card__blurb">End-to-end owner of production fraud ML systems at the biggest BNPL lender in Latin America. Delivered a 70% reduction in monthly fraud losses.</p>
+        <p class="exp-card__domain">Fintech · Fraud &amp; Risk</p>
       </div>
     </div>
 
@@ -44,8 +43,7 @@ format:
       <div class="exp-card__body">
         <p class="exp-card__company">Rappi</p>
         <p class="exp-card__role">Growth Data Scientist</p>
-        <p class="exp-card__domain">Super App · Growth &amp; Attribution · Unicorn</p>
-        <p class="exp-card__blurb">Drove marketing spend decisions through attribution modeling and A/B testing at one of Latin America's largest on-demand platforms.</p>
+        <p class="exp-card__domain">Unicorn On-demand Delivery · Growth</p>
       </div>
     </div>
 
@@ -54,8 +52,25 @@ format:
       <div class="exp-card__body">
         <p class="exp-card__company">Heineken</p>
         <p class="exp-card__role">Growth Data Scientist</p>
-        <p class="exp-card__domain">CPG · B2B E-commerce · Experimentation</p>
-        <p class="exp-card__blurb">Enabled data-driven growth on a newly launched B2B e-commerce platform — ran subscription experiments that lifted revenue 16% and built an NLP pipeline that cut Ops review time from two weeks to under two minutes.</p>
+        <p class="exp-card__domain">CPG · B2B E-commerce · Growth</p>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <img class="exp-card__logo" src="img/insaite_logo.png" alt="Insaite" loading="lazy" decoding="async" />
+      <div class="exp-card__body">
+        <p class="exp-card__company">Insaite</p>
+        <p class="exp-card__role">Data Science Sales Engineer</p>
+        <p class="exp-card__domain">AI as a Service · Strategy &amp; Consulting</p>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <img class="exp-card__logo exp-card__logo--dark-bg" src="img/axity_logo.png" alt="Axity" loading="lazy" decoding="async" />
+      <div class="exp-card__body">
+        <p class="exp-card__company">Axity</p>
+        <p class="exp-card__role">Junior Data Scientist</p>
+        <p class="exp-card__domain">Digital Transformation Firm · Consulting</p>
       </div>
     </div>
 
@@ -64,7 +79,7 @@ format:
 
 <section id="projects" class="section-block section-block--tight" data-animate aria-labelledby="projects-heading">
   <h2 id="projects-heading" class="section-heading">Projects</h2>
-  <p class="section-lede">Selected work — tools and dashboards I've shipped or maintain.</p>
+  <p class="section-lede">Selected work. Tools and dashboards I've shipped or maintain.</p>
   <div class="project-grid">
     <a class="project-card" href="https://pypi.org/project/megumi/" target="_blank" rel="noopener noreferrer">
       <div class="project-card__row">
@@ -85,9 +100,28 @@ format:
           <p class="project-card__meta"><span class="project-card__tag">Dashboard</span><span class="project-card__dot" aria-hidden="true">·</span><span>Plotly Dash · Yelp</span></p>
         </div>
       </div>
-      <p class="project-card__desc">Interactive map of Canada's food scene from public Yelp data — explore cities and categories.</p>
+      <p class="project-card__desc">Interactive map of Canada's food scene from public Yelp data. Explore cities and categories.</p>
       <span class="project-card__cta">Open live app <span aria-hidden="true">→</span></span>
     </a>
+    <div class="project-card project-card--featured">
+      <div class="project-card__logo-row">
+        <img src="img/munchgo_logo.png" alt="MunchGo" loading="lazy" decoding="async" />
+        <img src="img/wingseat_logo.png" alt="WingsEat" loading="lazy" decoding="async" />
+        <img src="img/munchindogs_logo.png" alt="Munchin' Dogs" loading="lazy" decoding="async" />
+      </div>
+      <div class="project-card__head">
+        <h3 class="project-card__title">Ghost Kitchen — MunchGo, WingsEat &amp; Munchin' Dogs</h3>
+        <p class="project-card__meta">
+          <span class="project-card__tag">Founder</span>
+          <span class="project-card__dot" aria-hidden="true">·</span>
+          <span>Data-driven · Mexico City · Food Tech</span>
+        </p>
+      </div>
+      <p class="project-card__desc">
+        Co-founded and scaled a data-driven ghost kitchen in Mexico City operating three virtual restaurant brands across brunch, wings, and hot dogs. Used Yelp and HERE Maps data to identify market gaps, benchmark competitors, analyze customer review patterns, and find optimal pricing. This turned raw location and review data into operational decisions that shaped the menu, branding, and acquisition strategy.
+      </p>
+      <span class="project-card__cta">Founder &amp; operator <span aria-hidden="true">→</span></span>
+    </div>
   </div>
 </section>
 
@@ -111,7 +145,10 @@ format:
 <section id="now" class="section-block" data-animate aria-labelledby="now-heading">
   <h2 id="now-heading" class="section-heading">Right now</h2>
   <div class="now-card">
-    Pursuing my Master of Data Science at UBC — focused on ML systems, LLM applications, and production analytics.
+    <div class="now-card__inner">
+      <img class="now-card__logo" src="img/ubc_logo.png" alt="UBC" loading="lazy" decoding="async" />
+      <p style="margin:0;">Pursuing my Master of Data Science at UBC. Focused on ML systems, LLM applications, and production analytics.</p>
+    </div>
   </div>
 </section>
 
