@@ -418,3 +418,5 @@ FodyWeavers.xsd
 *.msp
 
 /.quarto/
+# Quarto default output when not using project output-dir (this site uses docs/)
+/_site/
