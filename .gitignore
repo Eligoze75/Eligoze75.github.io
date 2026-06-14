@@ -420,3 +420,7 @@ FodyWeavers.xsd
 /.quarto/
 # Quarto default output when not using project output-dir (this site uses docs/)
 /_site/
+
+# Next.js
+/.next/
+/node_modules/
