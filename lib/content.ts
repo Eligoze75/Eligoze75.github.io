@@ -10,8 +10,8 @@ export const site = {
 };
 
 export const navLinks = [
-  { href: "#projects", label: "Projects" },
-  { href: "#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#about", label: "About" },
   { href: site.medium, label: "Writing", external: true },
 ];
 
@@ -43,6 +43,25 @@ export const brewo = {
   links: {
     site: "https://brewo.io",
     subscribe: "https://brewo.io/subscribe",
+  },
+};
+
+export const appliedGhosted = {
+  id: "applied-and-ghosted",
+  name: "Applied & Ghosted",
+  badge: "Cooking · Founder",
+  tagline: "A little terminal energy. A lot of stubborn engineering.",
+  logo: "/img/applied_and_ghosted_logo.png",
+  description:
+    "I thought my resume was fine. Then Jobscan scored it like a sad trombone. The resume wasn't \"bad\", it just wasn't speaking ATS. Every application needed a tailored version, and every paid tool wanted a subscription that felt rude when you don't have a job yet.",
+  contributions: [
+    "So: Applied & Ghosted. Help people get interviews without selling a kidney for keyword matching.",
+    "Score against the job description, show what to keep and what to fix, optimize, download, send.",
+    "The vibe is playful on purpose. Job hunting is already bleak. Repeat until someone human actually replies.",
+  ],
+  tags: ["ATS", "Resume optimization", "LLMs", "Local-first", "Product"],
+  links: {
+    site: "https://appliednghosted.com/",
   },
 };
 

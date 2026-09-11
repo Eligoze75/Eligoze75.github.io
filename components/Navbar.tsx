@@ -23,10 +23,9 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a
-          href="#"
-          className="flex items-center gap-2 text-lg font-bold tracking-tight text-white sm:text-xl"
+          href="/"
+          className="text-lg font-bold tracking-tight text-white sm:text-xl"
         >
-          <span className="text-[var(--color-accent)]">/</span>
           {site.name}
         </a>
         <ul className="flex items-center gap-1 sm:gap-2">
@@ -43,6 +42,14 @@ export function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="/resume"
+              className="mono-label rounded-[var(--radius-control)] px-3 py-1.5 text-[var(--color-muted)] transition-colors hover:bg-[var(--color-surface)] hover:text-white sm:px-4"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

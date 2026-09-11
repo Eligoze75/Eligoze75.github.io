@@ -9,7 +9,7 @@ export function WorkTimeline() {
       <div className="mx-auto max-w-6xl">
         <FadeIn>
           <SectionHeading
-            index="05"
+            index="06"
             title="Work"
             lede="Six years across fintech, a Latin American unicorn, and a global consumer brand. A few of the problems I got to chew on along the way."
           />

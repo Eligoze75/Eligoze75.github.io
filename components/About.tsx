@@ -7,7 +7,7 @@ export function About() {
     <section id="about" className="px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <FadeIn>
-          <SectionHeading index="04" title={about.title} />
+          <SectionHeading index="05" title={about.title} />
         </FadeIn>
 
         <div className="mt-8 grid gap-5 lg:grid-cols-12">

@@ -4,8 +4,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-6 pb-20 pt-32 sm:pb-28 sm:pt-40">
-      <div className="hero-shapes" aria-hidden="true" />
+    <section className="relative overflow-hidden px-6 pb-28 pt-40 sm:pb-36 sm:pt-52">
       <div className="relative mx-auto max-w-6xl">
         <FadeIn>
           <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-14">
@@ -52,6 +51,13 @@ export function Hero() {
                   className="btn-ghost"
                 >
                   Read my writing
+                </a>
+                <a
+                  href="/Eli_Gonzalez_Resume.pdf"
+                  download="Eli_Gonzalez_Resume.pdf"
+                  className="btn-ghost"
+                >
+                  Download resume
                 </a>
               </div>
             </div>

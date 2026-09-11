@@ -9,7 +9,7 @@ export function ExperienceStrip() {
       <div className="mx-auto max-w-6xl">
         <FadeIn>
           <SectionHeading
-            index="03"
+            index="04"
             title="Where I've worked"
             lede="Startups, a unicorn, and a global brand. Different settings, but mostly the same job: find where data and AI can help a business grow."
           />

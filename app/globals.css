@@ -9,15 +9,15 @@
 }
 
 @theme {
-  --color-bg: #080808;
-  --color-surface: #0e0e0e;
-  --color-surface-elevated: #161616;
-  --color-text: #fafafa;
-  --color-muted: #9a9a9a;
+  --color-bg: #000000;
+  --color-surface: #0a0a0a;
+  --color-surface-elevated: #111111;
+  --color-text: #f5f5f5;
+  --color-muted: #8a8a8a;
   --color-faint: #5a5a5a;
-  --color-accent: #f97316;
-  --color-accent-hover: #fb8a3c;
-  --color-border: rgba(255, 255, 255, 0.07);
+  --color-accent: #e8e8e8;
+  --color-accent-hover: #ffffff;
+  --color-border: rgba(255, 255, 255, 0.08);
   --color-logo-bg: #f4f3ee;
   --color-logo-border: rgba(0, 0, 0, 0.06);
   --font-sans: "Satoshi", system-ui, sans-serif;
@@ -54,21 +54,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Faint engineering grid + grain across the whole page */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-  background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse 100% 60% at 50% 0%, #000 0%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse 100% 60% at 50% 0%, #000 0%, transparent 75%);
-}
-
 main,
 header,
 footer {
@@ -77,8 +62,8 @@ footer {
 }
 
 ::selection {
-  background-color: rgba(249, 115, 22, 0.3);
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .mono-label {
@@ -99,17 +84,16 @@ footer {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
-  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+  transition: border-color 200ms ease;
 }
 
 .surface-card:hover {
-  border-color: rgba(249, 115, 22, 0.3);
-  box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.06), 0 0 32px -8px rgba(249, 115, 22, 0.18);
+  border-color: rgba(255, 255, 255, 0.14);
 }
 
 .section-heading {
   font-family: var(--font-sans);
-  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  font-size: clamp(2rem, 4.5vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.15;
@@ -117,10 +101,10 @@ footer {
 
 .hero-heading {
   font-family: var(--font-sans);
-  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  font-size: clamp(2.5rem, 6.5vw, 4rem);
   font-weight: 700;
   letter-spacing: -0.025em;
-  line-height: 1.12;
+  line-height: 1.1;
 }
 
 .logo-pad {
@@ -170,18 +154,17 @@ footer {
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   background-color: var(--color-accent);
-  color: #0a0a0a;
+  color: #000000;
   font-family: var(--font-mono);
   font-weight: 600;
   font-size: 0.8125rem;
   letter-spacing: 0.01em;
   border-radius: var(--radius-control);
-  transition: background-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+  transition: background-color 200ms ease;
 }
 
 .btn-primary:hover {
   background-color: var(--color-accent-hover);
-  box-shadow: 0 0 24px -4px rgba(249, 115, 22, 0.45);
 }
 
 .btn-ghost {
@@ -202,7 +185,7 @@ footer {
 
 .btn-ghost:hover {
   color: var(--color-text);
-  border-color: rgba(249, 115, 22, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .tag {
@@ -214,9 +197,9 @@ footer {
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--color-accent);
-  background-color: rgba(249, 115, 22, 0.1);
-  border: 1px solid rgba(249, 115, 22, 0.2);
+  color: var(--color-muted);
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.25rem;
 }
 
@@ -236,62 +219,24 @@ footer {
 
 .skill-chip:hover {
   color: var(--color-text);
-  border-color: rgba(249, 115, 22, 0.4);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
 .hero-shapes {
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
+  display: none;
 }
 
 .hero-shapes::before {
-  content: "";
-  position: absolute;
-  top: -10rem;
-  right: -6rem;
-  width: 26rem;
-  height: 26rem;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(249, 115, 22, 0.16) 0%, transparent 68%);
-  filter: blur(8px);
+  content: none;
 }
 
 /* status dot used in the hero kicker */
 .status-dot {
-  position: relative;
   display: inline-block;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background-color: #34d399;
-}
-
-.status-dot::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background-color: #34d399;
-  animation: status-pulse 2s ease-out infinite;
-}
-
-@keyframes status-pulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(2.8);
-    opacity: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .status-dot::after {
-    animation: none;
-  }
 }
 
 /* hairline divider between major sections */
@@ -300,11 +245,5 @@ footer {
   width: 100%;
   max-width: 72rem;
   margin: 0 auto;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--color-border) 20%,
-    var(--color-border) 80%,
-    transparent
-  );
+  background: rgba(255, 255, 255, 0.06);
 }

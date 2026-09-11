@@ -4,8 +4,7 @@ export function Footer() {
   return (
     <footer className="border-t border-[var(--color-border)] px-6 py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
-        <p className="flex items-center gap-2 text-sm font-bold text-white">
-          <span className="text-[var(--color-accent)]">/</span>
+        <p className="text-sm font-bold text-white">
           {site.name}
         </p>
         <nav className="flex flex-wrap items-center justify-center gap-6 text-[var(--color-muted)]">
@@ -30,6 +29,12 @@ export function Footer() {
             className="mono-label transition-colors hover:text-white"
           >
             Email
+          </a>
+          <a
+            href="/resume"
+            className="mono-label transition-colors hover:text-white"
+          >
+            Resume
           </a>
         </nav>
       </div>

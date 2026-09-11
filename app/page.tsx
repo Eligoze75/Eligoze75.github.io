@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { AppliedGhostedSpotlight } from "@/components/AppliedGhostedSpotlight";
 import { BrewoSpotlight } from "@/components/BrewoSpotlight";
 import { Education } from "@/components/Education";
 import { ExperienceStrip } from "@/components/ExperienceStrip";
@@ -17,6 +18,8 @@ export default function Home() {
       <main>
         <Hero />
         <BrewoSpotlight />
+        <div className="section-divider" />
+        <AppliedGhostedSpotlight />
         <div className="section-divider" />
         <ProjectGrid />
         <div className="section-divider" />

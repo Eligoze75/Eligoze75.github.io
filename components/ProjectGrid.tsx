@@ -50,7 +50,7 @@ function ProjectCard({ project }: { project: Project }) {
     </>
   );
 
-  const className = `surface-card flex h-full flex-col p-7 sm:p-8 transition-transform hover:-translate-y-0.5 ${
+  const className = `surface-card flex h-full flex-col p-7 sm:p-8 ${
     project.featured ? "md:col-span-2" : ""
   }`;
 
@@ -79,7 +79,7 @@ export function ProjectGrid() {
       <div className="mx-auto max-w-6xl">
         <FadeIn>
           <SectionHeading
-            index="02"
+            index="03"
             title="Projects"
             lede="A mix of things I've built, some at work and some on my own. They look unrelated until you notice they're all me poking at the same question from different angles."
           />
