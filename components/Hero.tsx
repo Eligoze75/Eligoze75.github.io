@@ -50,7 +50,7 @@ export function Hero() {
                   rel="noopener noreferrer"
                   className="btn-ghost"
                 >
-                  Read my writing
+                  Read my blog
                 </a>
                 <a
                   href="/Eli_Gonzalez_Resume.pdf"

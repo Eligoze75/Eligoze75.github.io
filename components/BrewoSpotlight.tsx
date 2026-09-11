@@ -1,18 +1,11 @@
 import { FadeIn } from "@/components/FadeIn";
-import { SectionHeading } from "@/components/SectionHeading";
 import { brewo } from "@/lib/content";
 import Image from "next/image";
 
 export function BrewoSpotlight() {
   return (
-    <section id="brewo" className="px-6 py-16 sm:py-20">
+    <section id="brewo" className="px-6 pb-8 pt-8 sm:pb-10 sm:pt-10">
       <div className="mx-auto max-w-6xl">
-        <FadeIn>
-          <div className="mb-8">
-            <SectionHeading index="01" eyebrow="Featured product" title="My own product" />
-          </div>
-        </FadeIn>
-
         <div className="grid gap-6 lg:grid-cols-12">
           <FadeIn className="lg:col-span-7">
             <div className="surface-card flex h-full flex-col p-8 sm:p-10">

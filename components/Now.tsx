@@ -8,7 +8,7 @@ export function Now() {
     <section id="now" className="px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <FadeIn>
-          <SectionHeading index="09" title="Right now" />
+          <SectionHeading index="08" title="Right now" />
         </FadeIn>
 
         <FadeIn className="mt-8">

@@ -8,7 +8,7 @@ export function Stack() {
       <div className="mx-auto max-w-6xl">
         <FadeIn>
           <SectionHeading
-            index="08"
+            index="07"
             title="What I work on"
             lede="Less a list of tools, more the handful of areas I keep coming back to, and how they tend to feed into each other."
           />

@@ -3,11 +3,13 @@ import { AppliedGhostedSpotlight } from "@/components/AppliedGhostedSpotlight";
 import { BrewoSpotlight } from "@/components/BrewoSpotlight";
 import { Education } from "@/components/Education";
 import { ExperienceStrip } from "@/components/ExperienceStrip";
+import { FadeIn } from "@/components/FadeIn";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Now } from "@/components/Now";
 import { ProjectGrid } from "@/components/ProjectGrid";
+import { SectionHeading } from "@/components/SectionHeading";
 import { Stack } from "@/components/Stack";
 import { WorkTimeline } from "@/components/WorkTimeline";
 
@@ -17,8 +19,14 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <section className="px-6 pt-16 sm:pt-20">
+          <div className="mx-auto max-w-6xl">
+            <FadeIn>
+              <SectionHeading index="01" title="My own products" />
+            </FadeIn>
+          </div>
+        </section>
         <BrewoSpotlight />
-        <div className="section-divider" />
         <AppliedGhostedSpotlight />
         <div className="section-divider" />
         <ProjectGrid />

@@ -1,19 +1,20 @@
 import { FadeIn } from "@/components/FadeIn";
-import { SectionHeading } from "@/components/SectionHeading";
 import { appliedGhosted } from "@/lib/content";
 import Image from "next/image";
 
 export function AppliedGhostedSpotlight() {
   return (
-    <section id="applied-and-ghosted" className="px-6 py-16 sm:py-20">
+    <section id="applied-and-ghosted" className="px-6 pb-16 pt-4 sm:pb-20 sm:pt-6">
       <div className="mx-auto max-w-6xl">
         <FadeIn>
-          <div className="mb-8">
-            <SectionHeading
-              index="02"
-              eyebrow="Currently cooking"
-              title="Applied & Ghosted"
-            />
+          <div className="mb-6 flex items-center gap-3 rounded-[var(--radius-card)] border border-white/18 bg-white/[0.05] px-5 py-4">
+            <span className="status-dot" aria-hidden="true" />
+            <div>
+              <p className="mono-label text-white">Currently cooking</p>
+              <p className="mt-1 text-sm text-[var(--color-muted)]">
+                In progress · Founder
+              </p>
+            </div>
           </div>
         </FadeIn>
 

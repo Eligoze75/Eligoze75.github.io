@@ -79,7 +79,7 @@ export function ProjectGrid() {
       <div className="mx-auto max-w-6xl">
         <FadeIn>
           <SectionHeading
-            index="03"
+            index="02"
             title="Projects"
             lede="A mix of things I've built, some at work and some on my own. They look unrelated until you notice they're all me poking at the same question from different angles."
           />

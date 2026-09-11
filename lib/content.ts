@@ -12,7 +12,7 @@ export const site = {
 export const navLinks = [
   { href: "/#projects", label: "Projects" },
   { href: "/#about", label: "About" },
-  { href: site.medium, label: "Writing", external: true },
+  { href: site.medium, label: "My blog", external: true },
 ];
 
 export const hero = {
@@ -49,7 +49,7 @@ export const brewo = {
 export const appliedGhosted = {
   id: "applied-and-ghosted",
   name: "Applied & Ghosted",
-  badge: "Cooking · Founder",
+  badge: "Founder",
   tagline: "A little terminal energy. A lot of stubborn engineering.",
   logo: "/img/applied_and_ghosted_logo.png",
   description:
@@ -183,7 +183,7 @@ export const about = {
   facts: [
     { label: "Based in", value: "Vancouver, BC" },
     { label: "Experience", value: "6+ years" },
-    { label: "Currently", value: "Master of Data Science" },
+    { label: "Currently", value: "Building products" },
   ],
   paragraphs: [
     "Hi, I'm Elí.",
@@ -302,5 +302,5 @@ export const expertise = [
 
 export const now = {
   logo: "/img/ubc_logo.png",
-  text: "Doing my Master of Data Science at UBC, digging into ML systems, LLM applications, and the analytics that help products and teams make better calls. Still building things on the side.",
+  text: "I just finished my Master of Data Science at UBC. Still digging into ML systems, LLM applications, and the analytics that help products and teams make better calls. Still building things on the side.",
 };

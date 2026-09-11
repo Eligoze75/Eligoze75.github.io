@@ -8,7 +8,7 @@ export function Education() {
     <section id="education" className="px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <FadeIn>
-          <SectionHeading index="07" title="Education" />
+          <SectionHeading index="06" title="Education" />
         </FadeIn>
 
         <div className="mt-10 grid gap-4 md:grid-cols-3">
