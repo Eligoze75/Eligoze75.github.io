@@ -19,15 +19,17 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <section className="px-6 pt-16 sm:pt-20">
+        <section className="px-6 pb-10 pt-12 sm:pb-12 sm:pt-16">
           <div className="mx-auto max-w-6xl">
             <FadeIn>
               <SectionHeading index="01" title="My own products" />
             </FadeIn>
+            <div className="mt-6 space-y-4 sm:mt-8">
+              <AppliedGhostedSpotlight />
+              <BrewoSpotlight />
+            </div>
           </div>
         </section>
-        <BrewoSpotlight />
-        <AppliedGhostedSpotlight />
         <div className="section-divider" />
         <ProjectGrid />
         <div className="section-divider" />

@@ -49,7 +49,7 @@ export const brewo = {
 export const appliedGhosted = {
   id: "applied-and-ghosted",
   name: "Applied & Ghosted",
-  badge: "Founder",
+  badge: "Live product · Founder",
   tagline: "A little terminal energy. A lot of stubborn engineering.",
   logo: "/img/applied_and_ghosted_logo.png",
   description:
